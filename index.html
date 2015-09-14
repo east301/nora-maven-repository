@@ -2,6 +2,38 @@
 <meta charset="UTF-8">
 <h1>nora-maven-repository</h1>
 
+<h2>Provided libraries</h2>
+<ul>
+  <li>
+    <a http="https://wiki-bsse.ethz.ch/display/JHDF5">JHDF5 14.12.1</a>
+    <a href="http://www.apache.org/licenses/LICENSE-2.0.html">(Apache License version 2)</a>
+  </li>
+  <li>
+    <a href="https://wiki-bsse.ethz.ch/display/JHDF5">JHDF5 14.12.2</a>
+    <a href="http://www.apache.org/licenses/LICENSE-2.0.html">(Apache License version 2)</a>
+  </li>
+  <li>
+    <a href="http://sourceforge.net/projects/cdk/">Chemistry Development Kit 1.5.8</a>
+    <a href="https://github.com/cdk/cdk/blob/cdk-1.5.8/doc/lgpl.license">GNU Library or Lesser General Public License version 2.0</a>
+  </li>
+</ul>
+
+<h2>Usage - Gradle</h2>
+<pre>
+repositories {
+    maven {
+        url 'https://east301.github.io/nora-maven-repository'
+    }
+}
+
+dependencies {
+    compile 'jhdf5:jhdf5:14.12.2'
+    compile 'org.openscience.cdk:cdk-annotation:1.5.8'
+    ...
+}
+</pre>
+
+<h2>Directory structure</h2>
 <pre>
 .
 ├── jhdf5
@@ -157,6 +189,4 @@
             │   └── 1.5.8
             └── cdk-valencycheck
                 └── 1.5.8
-
-150 directories
 </pre>
